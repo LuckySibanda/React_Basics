@@ -1,7 +1,7 @@
 import React from 'react'
 
 import Card from "./components/card.jsx";
-import products from "./data/data.jsx";
+import MainProduct from "./data/data.jsx"
 
 export default function App () {
 
