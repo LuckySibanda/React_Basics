@@ -1,25 +1,36 @@
 import React from 'react'
 
 import Card from "./components/card.jsx";
-import MainProduct from "./data/data.jsx"
+import { Exhibitions, MainProducts} from "./data/data.jsx"
 
-export default function App () {
-
-
-    const cards = products.map(product => {
+export function App() {
+    const FourProducts = Exhibitions.map(item =>{
         return (
-            <Card
-                key={product.name}
-                name={product.name}
-                price={product.price}
-            />
+            <Card 
+                key={item.id}
+                name={item.name}
+                img={item.img}
+                price={item.price}
+                />
         )
-
     })
+
+    const Products = MainProducts.map(product => {
+        return (
+            <Card 
+                key={product.id}
+                name={product.name}
+                img={product.img}
+                price={product.price}
+                />
+        )
+    })
+
 
     return (
         <div>
-            {cards}
+            {FourProducts}
+            {Products}
         </div>
     )
 }

@@ -15,14 +15,22 @@ import PropTypes from 'prop-types';
 export default function Card(props) {
     return (
         <div className="card">
-            <div className="card--name">{props.name}</div>
-            <div className="card--price">{props.price}</div>
+            <img src={`../assets/${props.img}.png`} alt="product image" className="product--image" />
+            <div className="product--info">
+                <div className="product--name">
+                    {props.name}
+                </div>
+                <div className="product--price">
+                    {props.price}
+                </div>
+            </div>
         </div>
     )
 }
 
 Card.propTypes = {
     name: PropTypes.string.isRequired,
+    img: PropTypes.string.isRequired,
     price: PropTypes.number.isRequired,
 };
 
