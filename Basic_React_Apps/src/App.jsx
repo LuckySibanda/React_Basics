@@ -1,5 +1,7 @@
 import React from 'react'
 
+import Header from './components/header.jsx';
+import MainBody from './components/Main-body.jsx';
 import Card from "./components/card.jsx";
 import { Exhibitions, MainProducts} from "./data/data.jsx"
 
@@ -29,6 +31,8 @@ export function App() {
 
     return (
         <div>
+            <Header />
+            <MainBody />
             {FourProducts}
             {Products}
         </div>
