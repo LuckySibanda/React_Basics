@@ -4,7 +4,7 @@ export default function Header() {
     return (
         <header>
             <div className="img--logo-container">
-                <img src="" alt="" className="img--logo" />
+                <img src="../assets/icon/giftbag.svg" alt="Logo image" className="img--logo" />
             </div>
 
             <div className="header--info">
