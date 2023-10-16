@@ -1,14 +1,15 @@
-import React from 'react'
+// import React from 'react'
 
 import Header from './components/header.jsx';
 import MainBody from './components/Main-body.jsx';
-import Card from "./components/card.jsx";
+import ExhibitionCard from './components/ExhibitionCard.jsx';
+import Card from "./components/MainCard.jsx";
 import { Exhibitions, MainProducts} from "./data/data.jsx"
 
 export function App() {
     const FourProducts = Exhibitions.map(item =>{
         return (
-            <Card 
+            <ExhibitionCard
                 key={item.id}
                 name={item.name}
                 img={item.img}
@@ -30,12 +31,16 @@ export function App() {
 
 
     return (
-        <div>
+        <>
             <Header />
             <MainBody />
-            {FourProducts}
-            {Products}
-        </div>
+            <div className="top--products">
+                {FourProducts}
+            </div>
+            <div className="products--grid">
+                {Products}
+            </div>
+        </>
     )
 }
 
