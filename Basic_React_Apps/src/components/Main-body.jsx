@@ -13,7 +13,7 @@ export default function MainBody() {
                 </button>
             </div>
 
-            <img src="" alt="" className="main--img" />
+            <img src="../assets/Footballer.png" alt="Messi running with the ball" className="main--img" />
         </div>
     )
 }
