@@ -1,26 +1,26 @@
 export const Exhibitions = [
     {
         id: 11,
-        name: "Nike Terminator High",
-        img: "Nike-Terminator-High",
+        name: "Air Jordan Legacy 312",
+        img: "Air-Jordan-Legacy-312.png",
         price: 2400
     },
     {
         id: 12,
-        name: "Tatum 1 Old School",
-        img: "Tatum-1-Old-School",
+        name: "Zion 2 FullMoon",
+        img: "Zion-2-FullMoon.png",
         price: 4300
     },
     {
         id: 13,
-        name: "PG 4",
-        img: "PG-4",
+        name: "Zion 2.0",
+        img: "Zion-2.0.png",
         price: 1400
     },
     {
         id: 14,
-        name: "Luke 2 Q54",
-        img: "Luke-2-Q54",
+        name: "Zion 2",
+        img: "Zion-2.png",
         price: 5400
     }
 ]

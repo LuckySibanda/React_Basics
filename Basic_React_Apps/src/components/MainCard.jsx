@@ -1,21 +1,17 @@
-// import React from "react";
-
-// export default function Card(props) {
-//     return (
-//         <div className="card">
-//             <div className="card--name">{props.name}</div>
-//             <div className="card--price">{props.price}</div>
-//         </div>
-//     )
-// }
-
 // import React from 'react';
 import PropTypes from 'prop-types';
 
 export default function Card(props) {
+
+    // const [count, setCount] = React.useState(0)
+
+    // setCount( () => {
+    //     return count + 1
+    // })
+
     return (
         <div className="card">
-            <img src={`../assets/${props.img}.png`} alt="product image" className="product--image" />
+            <img src={`../../public/grid/${props.img}.png`} alt="product image" className="product--image" />
             <div className="product--info">
                 <div className="product--name">
                     {props.name}
@@ -23,6 +19,13 @@ export default function Card(props) {
                 <div className="product--price">
                     {props.price}
                 </div>
+            </div>
+
+            <div className="product--counter--container">
+                <button className='sub--btn'>-</button>
+                {/* <div className="prod--counter">{setCount}</div> */}
+                <div className="prod--counter">0</div>
+                <button className='add--btn'>+</button>
             </div>
         </div>
     )
@@ -35,6 +38,9 @@ Card.propTypes = {
 };
 
 
-// need a components folder with the card component, in that card import react, and props.
-// Export card to the app.jsx file that imports the raw object data and maps it to the card component
-//
+
+// need the ability to add the product to the cart, in that ability there needs to be away to add
+// more than 1 product and a way to subtract the number of each product added tp the cart.
+// for example, if you press the add to cart add one quantity of the product to the cart,
+// if then you specify the quantity of each product and press add to quantity it will add the quantity
+// specified

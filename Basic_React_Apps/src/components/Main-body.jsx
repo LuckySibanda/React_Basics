@@ -2,7 +2,7 @@
 
 export default function MainBody() {
     return (
-        <div className="main-body">
+        <div className="main--body">
             <div className="descript">
                 <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam quibusdam sapiente laboriosam perspiciatis officiis similique et minima nostrum nisi, esse deleniti autem! Consequuntur quae iure asperiores! Beatae quia vel nisi.
@@ -13,7 +13,7 @@ export default function MainBody() {
                 </button>
             </div>
 
-            <img src="../assets/Footballer.png" alt="Messi running with the ball" className="main--img" />
+            <img src="../../public/Footballer.png" alt="Messi running with the ball" className="main--img" />
         </div>
     )
 }

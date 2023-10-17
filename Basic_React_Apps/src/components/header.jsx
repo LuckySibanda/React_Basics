@@ -4,13 +4,14 @@ export default function Header() {
     return (
         <header>
             <div className="img--logo-container">
-                <img src="../assets/icon/giftbag.svg" alt="Logo image" className="img--logo" />
+                {/* <img src="../assets/icon/giftbag.svg" alt="Logo image" className="img--logo" /> */}
+                <img src="../../public/icon/giftbag.svg" alt="Logo image" className="img--logo icon" />
             </div>
 
             <div className="search--input">
                 <input type="text" placeholder="Search" />
-                <div className="search--logo">
-                    <img src="../assets/icon/search-icon.svg" alt="search icon" />
+                <div className="search--icon">
+                    <img src="../../public/icon/search-icon.svg" alt="search icon" className="icon" />
                 </div>
             </div>
 

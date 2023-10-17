@@ -1,10 +1,9 @@
-// import React from 'react';
 import PropTypes from 'prop-types';
 
 export default function ExhibitionCard(props) {
     return (
-        <div className="Exhibition--card">
-            <img src={`../assets/${props.img}.png`} alt="product image" className="product--image" />
+        <div className="card">
+            <img src={`../../public/Recommended/${props.img}`} alt="product image" className="product--image" />
             <div className="product--info">
                 <div className="product--name">
                     {props.name}
