@@ -10,8 +10,8 @@ export default function Header() {
 
             <div className="search--input">
                 <input type="text" placeholder="Search" />
-                <div className="search--icon">
-                    <img src="../../public/icon/search-icon.svg" alt="search icon" className="icon" />
+                <div className="search--icon-container">
+                    <img src="../../public/icon/search-icon.svg" alt="search icon" className="search--icon icon" />
                 </div>
             </div>
 

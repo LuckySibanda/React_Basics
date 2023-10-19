@@ -42,19 +42,34 @@ h1 {
 
 
 .img--logo-container > img {
+    width: 50px;
     max-width: 100%;
 }
 
 .search--input {
-    max-width: 200px;
+    display: flex;
+    justify-content: space-between;
+    width: 350px;
+    max-width: 500px;
 }
 
-.search--input > div {
+input {
+    width: 80%;
+    height: 50px;
+
+}
+
+/* .search--input > div {
     max-width: 100%;
+} */
+
+.search-icon-container {
+    align-items: center;
 }
 
 .search--icon {
-    width: 50px;
+    width: 30px;
+    margin: auto 0;
 }
 
 
