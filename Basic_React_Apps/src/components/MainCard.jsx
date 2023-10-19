@@ -17,6 +17,7 @@ export default function Card(props) {
     return (
         <div className="card">
             <img src={`../../public/grid/${props.img}.png`} alt="product image" className="product--image" />
+
             <div className="product--info">
                 <div className="product--name">
                     {props.name}
@@ -24,14 +25,16 @@ export default function Card(props) {
                 <div className="product--price">
                     {props.price}
                 </div>
+
+                <div className="product--counter--container">
+                    <button className='sub--btn' onClick={sub}>-</button>
+                    {/* <div className="prod--counter">{setCount}</div> */}
+                    <div className="prod--counter">{count}</div>
+                    <button className='add--btn' onClick={add}>+</button>
+                </div>
             </div>
 
-            <div className="product--counter--container">
-                <button className='sub--btn' onClick={sub}>-</button>
-                {/* <div className="prod--counter">{setCount}</div> */}
-                <div className="prod--counter">{count}</div>
-                <button className='add--btn' onClick={add}>+</button>
-            </div>
+            
         </div>
     )
 }

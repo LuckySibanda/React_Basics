@@ -34,9 +34,11 @@ export function App() {
         <>
             <Header />
             <MainBody />
+            <h1 className='products--title'>Recommended Products</h1>
             <div className="top--products">
                 {FourProducts}
             </div>
+            <h1 className='products--title'>All Products</h1>
             <div className="products--grid">
                 {Products}
             </div>

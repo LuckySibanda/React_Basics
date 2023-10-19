@@ -8,7 +8,6 @@
 #root {
   width: 100%;
   font-family: Arial, Helvetica, sans-serif;
-  background-color: rgb(159, 255, 223);
 }
 
 
@@ -33,6 +32,10 @@ header > div {
 
 }
 
+h1 {
+    text-align: center;
+}
+
 .img--logo-container {
     max-width: 100%;
 }
@@ -43,12 +46,15 @@ header > div {
 }
 
 .search--input {
-    max-width: 100%;
-    height: 50px;
+    max-width: 200px;
 }
 
 .search--input > div {
     max-width: 100%;
+}
+
+.search--icon {
+    width: 50px;
 }
 
 
@@ -58,6 +64,7 @@ header > div {
     align-items: center;
 
     padding: 0 40px;
+    margin-bottom: 250px;
 }
 
 .descript {
@@ -73,12 +80,14 @@ header > div {
 
 
 .top--products {
+    /* background-color: rgb(159, 255, 223); */
     display: flex;
     max-width: 100%;
     justify-content: space-around;
     align-items: center;
 
-    margin: 100px auto;
+    margin: auto;
+    padding: 20px 0 100px 0;
 }
 
 
@@ -92,7 +101,13 @@ header > div {
 }
 
 .card > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 5px 0 5px 10px;
+
     max-width: 100%;
+    height: 100px;
 }
 
 .card > img {
@@ -100,6 +115,28 @@ header > div {
     /* object-fit: cover; */
 }
 
+.product--name {
+    font-weight: bold;
+}
+
+.product--counter--container {
+    display: flex;
+    width: 40%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.product--counter--container > button {
+    width: 30%;
+    background-color: #fff;
+    font-weight: bold;
+    border: solid 1px grey;
+    border-radius: 10px;
+
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+}
 
 
 
@@ -109,4 +146,6 @@ header > div {
     margin: auto;
     margin-left: 10px;
     gap: 10px;
+
+    margin: 20px auto;
 }
