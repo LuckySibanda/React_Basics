@@ -8,7 +8,7 @@
 #root {
   width: 100%;
   font-family: Arial, Helvetica, sans-serif;
-  background-color: rgb(4, 93, 63);
+  background-color: rgb(159, 255, 223);
 }
 
 
@@ -17,7 +17,7 @@
 }
 
 header {
-    background-color: blueviolet;
+    background-color: rgb(209, 160, 255);
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -44,6 +44,7 @@ header > div {
 
 .search--input {
     max-width: 100%;
+    height: 50px;
 }
 
 .search--input > div {
@@ -55,6 +56,8 @@ header > div {
 .main--body{
     display: flex;
     align-items: center;
+
+    padding: 0 40px;
 }
 
 .descript {
@@ -75,7 +78,7 @@ header > div {
     justify-content: space-around;
     align-items: center;
 
-    margin: 10px auto;
+    margin: 100px auto;
 }
 
 
@@ -83,6 +86,9 @@ header > div {
 .card {
     background-color: #fff;
     width: 300px;
+
+    border: solid 1px grey;
+    border-radius: 20px;
 }
 
 .card > div {
