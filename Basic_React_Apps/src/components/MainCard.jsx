@@ -1,13 +1,17 @@
-// import React from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 
 export default function Card(props) {
 
-    // const [count, setCount] = React.useState(0)
+    const [count, setCount] = React.useState(0)
 
-    // setCount( () => {
-    //     return count + 1
-    // })
+    function add() {
+        return count + 1
+    }
+
+    function sub () {
+        return count - 1
+    }
 
     return (
         <div className="card">
@@ -22,10 +26,10 @@ export default function Card(props) {
             </div>
 
             <div className="product--counter--container">
-                <button className='sub--btn'>-</button>
+                <button className='sub--btn' onClick={sub}>-</button>
                 {/* <div className="prod--counter">{setCount}</div> */}
-                <div className="prod--counter">0</div>
-                <button className='add--btn'>+</button>
+                <div className="prod--counter">{count}</div>
+                <button className='add--btn' onClick={add}>+</button>
             </div>
         </div>
     )
