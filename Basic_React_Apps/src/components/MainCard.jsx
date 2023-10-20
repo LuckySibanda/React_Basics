@@ -7,11 +7,11 @@ export default function Card(props) {
     
 
     function add() {
-        return count + 1
+        setCount(count + 1)
     }
 
     function sub () {
-        return count - 1
+        setCount(count - 1)
     }
 
     return (
