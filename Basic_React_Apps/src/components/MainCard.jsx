@@ -1,10 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { MainProducts } from '../data/data';
 
 export default function Card(props) {
 
     const [count, setCount] = React.useState(0)
-    
 
     function add() {
         setCount(count + 1)
@@ -13,6 +13,14 @@ export default function Card(props) {
     function sub () {
         setCount(count - 1)
     }
+
+    const [prod, setProd] = React.useState([])
+
+    // function addToCart() {
+    //     setProd() =>{
+            
+    //     }
+    // }
 
     return (
         <div className="card">
@@ -25,6 +33,7 @@ export default function Card(props) {
                 <div className="product--price">
                     {props.price}
                 </div>
+                <div>{count ? "works" : "doesnt work"}</div>
 
                 <div className="product--counter--container">
                     <button className='sub--btn' onClick={sub}>-</button>
@@ -32,6 +41,10 @@ export default function Card(props) {
                     <div className="prod--counter">{count}</div>
                     <button className='add--btn' onClick={add}>+</button>
                 </div>
+
+                {/* <button onClick={console.log(props.id)} data-product-id='{props.id}'>Add to Cart</button> */}
+                
+                {/* <button onClick={console.log(props.key)} data-product-id='{props.key}'>Add to Cart</button> */}
             </div>
 
             
@@ -43,6 +56,7 @@ Card.propTypes = {
     name: PropTypes.string.isRequired,
     img: PropTypes.string.isRequired,
     price: PropTypes.number.isRequired,
+    id: PropTypes.number.isRequired,
 };
 
 

@@ -19,9 +19,14 @@ export function App() {
     })
 
     const Products = MainProducts.map(product => {
+
+
+
+
         return (
             <Card 
                 key={product.id}
+                id={product.id}
                 name={product.name}
                 img={product.img}
                 price={product.price}
