@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { MainProducts } from '../data/data';
+// import { MainProducts } from '../data/data';
 
 export default function Card(props) {
 
