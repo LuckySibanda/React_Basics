@@ -1,8 +1,20 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-// import { MainProducts } from '../data/data';
+import { MainProducts } from '../data/data';
 
 export default function Card(props) {
+
+    const [star, setStars] = React.setCount(MainProducts)
+
+    let starPic = ''
+
+    function Fav() {
+        setStars( (...prevState) => {
+            if (prevState.isFavourite) {
+                starPic = ''
+            }
+        })
+    }
 
     const [count, setCount] = React.useState(0)
 
@@ -13,14 +25,6 @@ export default function Card(props) {
     function sub () {
         setCount(count - 1)
     }
-
-    const [prod, setProd] = React.useState([])
-
-    // function addToCart() {
-    //     setProd() =>{
-            
-    //     }
-    // }
 
     return (
         <div className="card">
@@ -33,7 +37,7 @@ export default function Card(props) {
                 <div className="product--price">
                     {props.price}
                 </div>
-                <div>{count ? "works" : "doesnt work"}</div>
+                <div>{}</div>
 
                 <div className="product--counter--container">
                     <button className='sub--btn' onClick={sub}>-</button>
@@ -56,6 +60,7 @@ Card.propTypes = {
     name: PropTypes.string.isRequired,
     img: PropTypes.string.isRequired,
     price: PropTypes.number.isRequired,
+    fav: PropTypes.bool.isRequired,
     id: PropTypes.number.isRequired,
 };
 

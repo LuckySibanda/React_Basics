@@ -14,6 +14,7 @@ export function App() {
                 name={item.name}
                 img={item.img}
                 price={item.price}
+                fav={item.isFavourite}
                 />
         )
     })
@@ -30,6 +31,7 @@ export function App() {
                 name={product.name}
                 img={product.img}
                 price={product.price}
+                fav={product.isFavourite}
                 />
         )
     })
