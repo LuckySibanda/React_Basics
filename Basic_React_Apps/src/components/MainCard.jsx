@@ -13,44 +13,36 @@ export default function Card(props) {
     //     )
     // })
 
-    // const [varx, setVar] = React.useState(MainProducts)
+    const [varx, setVar] = React.useState(MainProducts)
 
     // const imageToShow = varx.isFavourite ? "../../public/icon/heart-filled.svg" : "../../public/icon/heart.svg"
 
     // let yn = props.fav
 
-    let imageToShow = props.fav ? "../../public/icon/heart-filled.svg" : "../../public/icon/heart.svg"
+    let imageToShow = varx.isFavourite ? "../../public/icon/heart-filled.svg" : "../../public/icon/heart.svg"
+
+    // if (varx.isFavourite) {
+    //     imageToShow = "../../public/icon/heart-filled.svg";
+    // }
+    // else {
+    //     imageToShow = "../../public/icon/heart.svg";
+    // }
 
     console.log(imageToShow)
 
     function toggleFavStar() {
-        // if (props.fav === true) {
-        //     props.fav = false
-        // }
-        // else {
-        //     props.fav = true
-        // }
-        console.log(props.fav)
+        setVar(prevState => {
+          return {
+            ...prevState,
+            isFavourite: !prevState.isFavourite
+          };
+        });
+    
+        console.log(setVar);
     }
 
-    
 
-    
 
-    // function toggleFavStar() {
-    //     setVar(preState => {
-    //         if (preState.isFavourite === true) {
-    //             preState.isFavourite = false
-    //         }
-    //         else {
-    //             preState.isFavourite = true
-    //         }
-
-    //         console.log(preState.isFavourite)
-    //     })
-
-        
-    // }
 
     const [count, setCount] = React.useState(0)
 
