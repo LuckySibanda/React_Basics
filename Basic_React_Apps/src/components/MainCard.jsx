@@ -1,19 +1,32 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 // import { MainProducts } from '../data/data';
-import Button from './add-to-cart';
+// import Button from './add-to-cart';
 import { MainProducts } from '../data/data';
 
 export default function Card(props) {
 
-    const x = MainProducts.map(btnPrd => {
-        return (
-            <Button
-                key={btnPrd.id}
-                id={btnPrd.id}
-                />
-        )
-    })
+    // const x = MainProducts.map(btnPrd => {
+    //     return (
+    //             const key = btnPrd.id
+    //             const id = btnPrd.id
+    //     )
+    // })
+
+    const [varx, setVar] = React.useState(MainProducts)
+
+    const imageToShow = varx.isFavourite ? "../../public/icon/heart-filled.svg" : "../../public/icon/heart.svg"
+
+    function toggleFavStar() {
+        setVar(preState => {
+            if (preState.isFavourite === true) {
+                preState.isFavourite = false
+            }
+            else {
+                preState.isFavourite = true
+            }
+        })
+    }
 
     const [count, setCount] = React.useState(0)
 
@@ -32,6 +45,7 @@ export default function Card(props) {
             <div className="product--info">
                 <div className="product--name">
                     {props.name}
+                    <img src={imageToShow} alt="" onClick={toggleFavStar} />
                 </div>
                 <div className="product--price">
                     {props.price}
@@ -43,7 +57,7 @@ export default function Card(props) {
                     <div className="prod--counter">{count}</div>
                     <button className='add--btn' onClick={add}>+</button>
                 </div>
-                {x}
+                {/* {x} */}
             </div>
 
             
