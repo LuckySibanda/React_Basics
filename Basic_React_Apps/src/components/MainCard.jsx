@@ -6,12 +6,16 @@ export default function Card(props) {
 
     const [star, setStars] = React.setCount(MainProducts)
 
-    let starPic = ''
+    
 
     function Fav() {
-        setStars( (...prevState) => {
-            if (prevState.isFavourite) {
-                starPic = ''
+        let starPic = ''
+        setStars( (...star) => {
+            if (star.isFavourite) {
+                starPic = '../../public/icon/heart-filled.svg'
+            }
+            else {
+                starPic = '../../public/icon/heart.svg'
             }
         })
     }
@@ -37,7 +41,7 @@ export default function Card(props) {
                 <div className="product--price">
                     {props.price}
                 </div>
-                <div>{}</div>
+                <div>{Fav}</div>
 
                 <div className="product--counter--container">
                     <button className='sub--btn' onClick={sub}>-</button>
