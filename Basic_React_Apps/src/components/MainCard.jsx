@@ -6,18 +6,68 @@ import { MainProducts } from '../data/data';
 
 export default function Card(props) {
 
-    // const x = MainProducts.map(btnPrd => {
-    //     return (
-    //             const key = btnPrd.id
-    //             const id = btnPrd.id
-    //     )
-    // })
+    const [prod, setProd] = React.useState(MainProducts);
+    const [cart, setCart] = React.useState([]);
+    const itemId = prod[0].id; // Assuming you want to work with the first product in prod
+
+    function addToCart() {
+        const matchingItem = cart.find((item) => item.prodId === itemId);
+
+        if (matchingItem) {
+            const updatedCart = cart.map((item) =>
+            item.prodId === itemId
+                ? { ...item, quantity: item.quantity + 1 }
+                : item
+            );
+            setCart(updatedCart);
+        } else {
+            setCart([...cart, { prodId: itemId, quantity: 1 }]);
+    }
+    }
+
+    console.log(cart);
+
+
+    // const [prod, setProd] = React.useState(MainProducts);
+
+    // const itemId = prod.id;
+
+    // const [cart, setCart] = React.useState([])
+
+    // function addToCart() {
+    //     let matchingItem;
+    //     setCart(cart.map(item => {
+    //         if (itemId === item.prodId) {
+    //             matchingItem = item
+    //         }
+    //     if (matchingItem) {
+    //         matchingItem.quantity + 1
+    //     }
+    //     else {
+    //         cart.push({
+    //             prodId: itemId,
+    //             quantity: 1
+    //         })
+    //     }
+        
+    //     // return matchingItem
+        
+        
+    //     // else {
+    //     //     cart.push({
+
+    //     //     })
+    //     // }
+    //     }))
+    // }
+
+    // console.log(cart);
+
+    // addToCart();
+
+
 
     const [varx, setVar] = React.useState(MainProducts)
-
-    // const imageToShow = varx.isFavourite ? "../../public/icon/heart-filled.svg" : "../../public/icon/heart.svg"
-
-    // let yn = props.fav
 
     let imageToShow = varx.isFavourite ? "../../public/icon/heart-filled.svg" : "../../public/icon/heart.svg"
 
@@ -28,7 +78,7 @@ export default function Card(props) {
     //     imageToShow = "../../public/icon/heart.svg";
     // }
 
-    console.log(imageToShow)
+    // console.log(imageToShow)
 
     function toggleFavStar() {
         setVar(prevState => {
@@ -38,7 +88,7 @@ export default function Card(props) {
           };
         });
     
-        console.log(setVar);
+        // console.log(setVar);
     }
 
 
@@ -74,6 +124,7 @@ export default function Card(props) {
                     <button className='add--btn' onClick={add}>+</button>
                 </div>
                 {/* {x} */}
+                <button onClick={addToCart}>Cart</button>
             </div>
 
             
