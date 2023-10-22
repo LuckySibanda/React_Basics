@@ -164,3 +164,8 @@ input {
 
     margin: 20px auto;
 }
+
+.fav-star {
+    width: 50px;
+    cursor: pointer;
+}

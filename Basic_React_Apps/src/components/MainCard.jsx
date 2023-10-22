@@ -13,20 +13,42 @@ export default function Card(props) {
     //     )
     // })
 
-    const [varx, setVar] = React.useState(MainProducts)
+    // const [varx, setVar] = React.useState(MainProducts)
 
-    const imageToShow = varx.isFavourite ? "../../public/icon/heart-filled.svg" : "../../public/icon/heart.svg"
+    // const imageToShow = varx.isFavourite ? "../../public/icon/heart-filled.svg" : "../../public/icon/heart.svg"
+
+    
 
     function toggleFavStar() {
-        setVar(preState => {
-            if (preState.isFavourite === true) {
-                preState.isFavourite = false
-            }
-            else {
-                preState.isFavourite = true
-            }
-        })
+        if (yn === true) {
+            yn = false
+        }
+        else {
+            yn = true
+        }
+        console.log(yn)
     }
+
+    let yn = props.fav
+
+    const imageToShow = yn ? "../../public/icon/heart-filled.svg" : "../../public/icon/heart.svg"
+
+    console.log(imageToShow)
+
+    // function toggleFavStar() {
+    //     setVar(preState => {
+    //         if (preState.isFavourite === true) {
+    //             preState.isFavourite = false
+    //         }
+    //         else {
+    //             preState.isFavourite = true
+    //         }
+
+    //         console.log(preState.isFavourite)
+    //     })
+
+        
+    // }
 
     const [count, setCount] = React.useState(0)
 
@@ -45,7 +67,7 @@ export default function Card(props) {
             <div className="product--info">
                 <div className="product--name">
                     {props.name}
-                    <img src={imageToShow} alt="" onClick={toggleFavStar} />
+                    <img className='fav-star' src={imageToShow} alt="" onClick={toggleFavStar} />
                 </div>
                 <div className="product--price">
                     {props.price}
