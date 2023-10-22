@@ -17,23 +17,25 @@ export default function Card(props) {
 
     // const imageToShow = varx.isFavourite ? "../../public/icon/heart-filled.svg" : "../../public/icon/heart.svg"
 
-    
+    // let yn = props.fav
 
-    function toggleFavStar() {
-        if (yn === true) {
-            yn = false
-        }
-        else {
-            yn = true
-        }
-        console.log(yn)
-    }
-
-    let yn = props.fav
-
-    const imageToShow = yn ? "../../public/icon/heart-filled.svg" : "../../public/icon/heart.svg"
+    let imageToShow = props.fav ? "../../public/icon/heart-filled.svg" : "../../public/icon/heart.svg"
 
     console.log(imageToShow)
+
+    function toggleFavStar() {
+        // if (props.fav === true) {
+        //     props.fav = false
+        // }
+        // else {
+        //     props.fav = true
+        // }
+        console.log(props.fav)
+    }
+
+    
+
+    
 
     // function toggleFavStar() {
     //     setVar(preState => {
