@@ -1,24 +1,19 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+// import { MainProducts } from '../data/data';
+import Button from './add-to-cart';
 import { MainProducts } from '../data/data';
 
 export default function Card(props) {
 
-    const [star, setStars] = React.setCount(MainProducts)
-
-    
-
-    function Fav() {
-        let starPic = ''
-        setStars( (...star) => {
-            if (star.isFavourite) {
-                starPic = '../../public/icon/heart-filled.svg'
-            }
-            else {
-                starPic = '../../public/icon/heart.svg'
-            }
-        })
-    }
+    const x = MainProducts.map(btnPrd => {
+        return (
+            <Button
+                key={btnPrd.id}
+                id={btnPrd.id}
+                />
+        )
+    })
 
     const [count, setCount] = React.useState(0)
 
@@ -41,7 +36,6 @@ export default function Card(props) {
                 <div className="product--price">
                     {props.price}
                 </div>
-                <div>{Fav}</div>
 
                 <div className="product--counter--container">
                     <button className='sub--btn' onClick={sub}>-</button>
@@ -49,10 +43,7 @@ export default function Card(props) {
                     <div className="prod--counter">{count}</div>
                     <button className='add--btn' onClick={add}>+</button>
                 </div>
-
-                {/* <button onClick={console.log(props.id)} data-product-id='{props.id}'>Add to Cart</button> */}
-                
-                {/* <button onClick={console.log(props.key)} data-product-id='{props.key}'>Add to Cart</button> */}
+                {x}
             </div>
 
             
