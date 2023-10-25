@@ -6,26 +6,26 @@ import { MainProducts } from '../data/data';
 
 export default function Card(props) {
 
-    const [prod, setProd] = React.useState(MainProducts);
-    const [cart, setCart] = React.useState([]);
-    const itemId = prod[0].id; // Assuming you want to work with the first product in prod
+    // const [prod, setProd] = React.useState(MainProducts);
+    // const [cart, setCart] = React.useState([]);
+    // const itemId = prod[0].id; // Assuming you want to work with the first product in prod
 
-    function addToCart() {
-        const matchingItem = cart.find((item) => item.prodId === itemId);
+    // function addToCart() {
+    //     const matchingItem = cart.find((item) => item.prodId === itemId);
 
-        if (matchingItem) {
-            const updatedCart = cart.map((item) =>
-            item.prodId === itemId
-                ? { ...item, quantity: item.quantity + 1 }
-                : item
-            );
-            setCart(updatedCart);
-        } else {
-            setCart([...cart, { prodId: itemId, quantity: 1 }]);
-    }
-    }
+    //     if (matchingItem) {
+    //         const updatedCart = cart.map((item) =>
+    //         item.prodId === itemId
+    //             ? { ...item, quantity: item.quantity + 1 }
+    //             : item
+    //         );
+    //         setCart(updatedCart);
+    //     } else {
+    //         setCart([...cart, { prodId: itemId, quantity: 1 }]);
+    // }
+    // }
 
-    console.log(cart);
+    // console.log(cart);
 
 
     // const [prod, setProd] = React.useState(MainProducts);
@@ -124,7 +124,7 @@ export default function Card(props) {
                     <button className='add--btn' onClick={add}>+</button>
                 </div>
                 {/* {x} */}
-                <button onClick={addToCart}>Cart</button>
+                {/* <button onClick={addToCart}>Cart</button> */}
             </div>
 
             
