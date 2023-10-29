@@ -16,7 +16,7 @@ export default function Hero() {
                     Wash My Kicks
                 </button>
             </span>
-            <img src="../public/main.jpg" alt="Main Hero Image" className="main--img" />
+            <img src="/main.jpg" alt="Main Hero Image" className="main--img" />
         </section>
-    ) 
+    )
 }
