@@ -35,7 +35,6 @@ export default function App() {
             <Hero />
             <Services />
             <Satisfaction />
-            <App />
             {CustomerSatisfaction}
             {CustomerFaq}
         </>

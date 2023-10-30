@@ -13,5 +13,5 @@ export default function Satisfaction(props) {
 
 Satisfaction.propTypes = {
     CustomerName: PropTypes.string.isRequired,
-    CustomerQoute: PropTypes.string.isRequired,
+    CustomerQoute: PropTypes.string.isRequired
 };
