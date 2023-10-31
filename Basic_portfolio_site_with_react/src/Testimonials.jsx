@@ -2,12 +2,12 @@ import PropTypes from "prop-types";
 
 export default function Satisfaction(props) {
     return (
-        <section className="testimonials">
+        // <section className="testimonials">
             <div className="card">
                 <h4 className="customer--name">{props.CustomerName}</h4>
                 <p>{props.CustomerQoute}</p>
             </div>
-        </section>
+        // </section>
     );
 }
 

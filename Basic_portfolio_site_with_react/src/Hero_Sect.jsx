@@ -1,6 +1,6 @@
 export default function Hero() {
     return (
-        <section>
+        <section className="main--hero">
             <div className="main--column">
                 <h1>
                     Give Yo Shoes A New Life
@@ -10,13 +10,16 @@ export default function Hero() {
                     that are as good as new and will give you everlasting
                     Confidence.
                 </p>
+                <div className="cta--box">
+                    <button className="hero-cta--btn">
+                        Wash My Kicks
+                    </button>
+                </div>
             </div>
-            <span className="cta--box">
-                <button className="hero-cta--btn">
-                    Wash My Kicks
-                </button>
-            </span>
+            
             <img src="/main.jpg" alt="Main Hero Image" className="main--img" />
+            <div className="blue--box"></div>
+            <div className="brown--box"></div>
         </section>
     )
 }

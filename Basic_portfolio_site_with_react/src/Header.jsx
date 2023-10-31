@@ -1,29 +1,29 @@
 export default function Header() {
     return (
         <header>
-            <span className="company--name">
+            <div className="company--name">
                 The Shu Wash
-            </span>
+            </div>
 
-            <div className="home--links">
-                <span>
+            <nav className="home--links">
+                <div>
                     Home
-                </span>
-                <span>
+                </div>
+                <div>
                     Pricing
-                </span>
-                <span>
+                </div>
+                <div>
                     Products
-                </span>
-                <span>
+                </div>
+                <div>
                     Contact
-                </span>
-                <span>
+                </div>
+                <div>
                     <button className="cta--button">
                         Book A Wash
                     </button>
-                </span>
-            </div>
+                </div>
+            </nav>
         </header>
     )
 }

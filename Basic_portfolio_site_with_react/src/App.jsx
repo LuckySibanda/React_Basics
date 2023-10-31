@@ -4,6 +4,7 @@ import Services from './Sub-Hero'
 import {Testimonials, FAQs} from "./Data";
 import Satisfaction from "./Testimonials";
 import FrequentQuestions from "./Faqs";
+import './Styles/App.css'
 
 export default function App() {
     const CustomerSatisfaction = Testimonials.map(item =>{
@@ -34,9 +35,19 @@ export default function App() {
             <Header />
             <Hero />
             <Services />
-            <Satisfaction />
-            {CustomerSatisfaction}
-            {CustomerFaq}
+            <section className="feedback">
+                <h3>Here&apos;s what some of our Valued customers had to say</h3>
+                <div className="testimonials">
+                    {CustomerSatisfaction}
+                </div>
+            </section>
+            <section className='faqs--section'>
+                <h4>Frequently Asked Questions</h4>
+                <div className="faqs">
+                    {CustomerFaq}
+                </div>
+                
+            </section>
         </>
     )
 }
