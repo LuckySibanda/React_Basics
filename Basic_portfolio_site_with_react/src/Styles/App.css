@@ -330,3 +330,10 @@ hr {
 
 
 
+.footer {
+	display: flex;
+}
+
+.footer > div {
+	width: 25%;
+}
