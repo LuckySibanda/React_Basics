@@ -6,6 +6,7 @@ import {Testimonials, FAQs} from "./Data";
 import Satisfaction from "./Testimonials";
 import FrequentQuestions from "./Faqs";
 import Form from './From';
+import Footer from './Footer';
 import './Styles/App.css'
 
 export default function App() {
@@ -54,6 +55,7 @@ export default function App() {
                 
             </section>
             <Form />
+            <Footer />
         </>
     )
 }
