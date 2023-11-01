@@ -15,6 +15,10 @@
   -webkit-text-size-adjust: 100%; */
 }
 
+button {
+    cursor: pointer;
+}
+
 
 
 

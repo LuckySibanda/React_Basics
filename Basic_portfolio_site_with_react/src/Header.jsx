@@ -2,7 +2,11 @@ export default function Header() {
     return (
         <header>
             <div className="company--name">
-                The Shu Wash
+                <img src="./shus.png" alt="" className="logo--img"/>
+                <span>
+                    The Shu Wash
+                </span>
+                
             </div>
 
             <nav className="home--links">

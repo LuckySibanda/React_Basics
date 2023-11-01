@@ -1,9 +1,9 @@
-export default function Services() {
+export default function AboutUs() {
     return (
         <section className="sub--hero">
             <h2>What We Offer</h2>
             
-            <div className="services--box">
+            <div className="about--box">
             {/* <div className="img--container"> */}
                 <img src="/sub-blue-img.jpg" alt="clean shoe with dirty shoe" />
             {/* </div> */}

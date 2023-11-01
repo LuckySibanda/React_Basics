@@ -1,6 +1,7 @@
 import Header from './Header'
 import Hero from './Hero_Sect'
-import Services from './Sub-Hero'
+import Services from './Services';
+import AboutUs from './Sub-Hero'
 import {Testimonials, FAQs} from "./Data";
 import Satisfaction from "./Testimonials";
 import FrequentQuestions from "./Faqs";
@@ -34,13 +35,16 @@ export default function App() {
         <>
             <Header />
             <Hero />
+            <h2 className='services--head'>Our Process</h2>
             <Services />
+            <hr />
             <section className="feedback">
                 <h3>Here&apos;s what some of our Valued customers had to say</h3>
                 <div className="testimonials">
                     {CustomerSatisfaction}
                 </div>
             </section>
+            <AboutUs />
             <section className='faqs--section'>
                 <h4>Frequently Asked Questions</h4>
                 <div className="faqs">
