@@ -1,32 +1,32 @@
 export default function Form() {
     return(
         <>
-        <h2>Contact Us</h2>
+        <h2 className="form--head">Contact Us</h2>
         <form action="">
             <div>
                 <label htmlFor="">
-                    Name
+                    Name:
                 </label>
                 <input type="text" />
             </div>
 
             <div>
                 <label htmlFor="">
-                    Name
+                    Email:
                 </label>
                 <input type="text" />
             </div>
 
             <div>
                 <label htmlFor="">
-                    Name
+                    Telephone:
                 </label>
                 <input type="text" />
             </div>
 
             <div>
                 <label htmlFor="">
-                    Name
+                    Shu type:
                 </label>
                 <input type="text" />
             </div>

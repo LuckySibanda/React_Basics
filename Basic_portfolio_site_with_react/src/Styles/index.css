@@ -5,8 +5,11 @@
 
   background-color: #E09132;
 
+  height: 100vh;
   margin: 0;
   padding: 0;
+
+  /* position: relative; */
 
   /* font-synthesis: none;
   text-rendering: optimizeLegibility;

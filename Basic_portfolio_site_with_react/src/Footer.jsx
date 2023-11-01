@@ -3,7 +3,7 @@ export default function Footer() {
         <section className="footer">
             <div className="footer--column company--about">
                 <div className="signage">
-                    <img src="./shus" alt="" className="logo" />
+                    <img src="./shus.png" alt="" className="logo" />
                     <span>
                         The Shu Wash
                     </span>
@@ -12,10 +12,10 @@ export default function Footer() {
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat adipisci possimus recusandae consequuntur facilis officiis, magni dolore ratione debitis impedit nihil? Atque non ipsam voluptates expedita dignissimos porro esse incidunt.
                 </p>
                 <div className="social--media">
-                    <img src="" alt="facebook" className="social--media--icon" />
-                    <img src="" alt="twitter" className="social--media--icon" />
-                    <img src="" alt="instagram" className="social--media--icon" />
-                    <img src="" alt="tik tok" className="social--media--icon" />
+                    <img src="./icons/facebook.svg" alt="facebook" className="social--media--icon" />
+                    <img src="./icons/instagram.svg" alt="twitter" className="social--media--icon" />
+                    <img src="./icons/pinterest.svg" alt="instagram" className="social--media--icon" />
+                    <img src="./icons/twitter.svg" alt="tik tok" className="social--media--icon" />
                 </div>
             </div>
 
@@ -50,6 +50,7 @@ export default function Footer() {
                     <li>Our prcoess</li>
                     <li>And many more</li>
                 </ul>
+                <button className="cta--button footer--cta">Book A Wash</button>
             </div>
         </section>
     )

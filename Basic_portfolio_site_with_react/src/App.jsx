@@ -8,6 +8,7 @@ import FrequentQuestions from "./Faqs";
 import Form from './From';
 import Footer from './Footer';
 import './Styles/App.css'
+import './Styles/Responsive-Design.css'
 
 export default function App() {
     const CustomerSatisfaction = Testimonials.map(item =>{
