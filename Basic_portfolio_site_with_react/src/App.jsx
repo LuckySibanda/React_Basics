@@ -5,6 +5,7 @@ import AboutUs from './Sub-Hero'
 import {Testimonials, FAQs} from "./Data";
 import Satisfaction from "./Testimonials";
 import FrequentQuestions from "./Faqs";
+import Form from './From';
 import './Styles/App.css'
 
 export default function App() {
@@ -52,6 +53,7 @@ export default function App() {
                 </div>
                 
             </section>
+            <Form />
         </>
     )
 }
