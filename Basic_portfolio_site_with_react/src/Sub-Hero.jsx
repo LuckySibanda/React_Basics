@@ -1,7 +1,7 @@
 export default function AboutUs() {
     return (
         <section className="sub--hero">
-            <h2>What We Offer</h2>
+            <h2>About Us</h2>
             
             <div className="about--box">
             {/* <div className="img--container"> */}
@@ -18,6 +18,7 @@ export default function AboutUs() {
                     et quis illo totam consequuntur odio dignissimos necessitatibus eveniet ipsum vero,
                      officiis voluptatum quod. Tempore fuga recusandae dolorum ullam ab?
                 </p>
+                <div className="window--box"></div>
             </div>
         </section>
     );

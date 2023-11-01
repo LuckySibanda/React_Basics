@@ -202,37 +202,49 @@ hr {
 .sub--hero {
 	margin: 100px auto;
 	/* background-color: #0D2137; */
-	background-color: #a4d5e3;
+	/* background-color: #a4d5e3; */
 	/* margin: 20px; */
-	padding: 10px;
+	padding: 0 0 0 10px;
 
-	/* color: #fff; */
-	color: #21669b;
+	position: relative;
+	color: #fff;
+	/* color: #21669b; */
 }
 
 .sub--hero > h2 {
 	font-size: 40px;
 	text-align: center;
 	padding: 20px 0;
+	color: #E09132;
 }
 
 .about--box {
 	display: flex;
-
 }
 
 .about--box > img {
-	width: 450px;
+	width: 400px;
 	/* padding: 20px; */
 	object-fit: contain;
 
 	border: #0D2137 1px solid;
-	border-radius: 10px;
+	/* border-radius: 10px; */
 }
 
 .about--box > p {
 	font-size: 25px;
 	padding: 30px;
+	/* text-align: justify; */ /* convension is to dont */
+}
+
+.window--box {
+	position: absolute;
+	top: 0;
+	right: 0;
+	z-index: -1;
+	background-color: #0D2137;
+	width: 80%;
+	height: 500px;	
 }
 
 
