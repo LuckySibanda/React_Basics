@@ -1,23 +1,17 @@
-import React from "react";
+// import React from "react";
+import PropTypes from 'prop-types';
 
-export default function Counter() {
-    const [count, setCount] = React.useState
-
-    function Add() {
-        setCount(count + 1)
-    }
-
-    function Sub() {
-        setCount(count - 1)
-    }
+export default function Counter(props) {
+    
 
     return (
         <div>
-            <h3>0</h3>
-
-            <button onClick={Add}>+</button>
-            <div>{count}</div> 
-            <button onClick={Sub}>-</button>
+                <div className="counter-count">{props.number}</div>
         </div>
     )
 }
+
+
+Counter.propTypes = {
+    number: PropTypes.number.isRequired,
+};

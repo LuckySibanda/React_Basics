@@ -1,4 +1,5 @@
 import React from 'react'
+import Counter from './Counter-state'
 // import './App.css'
 
 function App() {
@@ -44,8 +45,8 @@ function App() {
 
     return (
         <>
-        <div className="stte">
-            <h1 className="state--tit">IS this state important to know?</h1>
+        <div className="state">
+            <h1 className="state--title">IS this state important to know?</h1>
             <div onClick={handleClick}>
                 <button>{isImportant}</button>
             </div>
@@ -53,7 +54,8 @@ function App() {
 
         <div className="counter">
             <button onClick={Sub} className="counter--minus">-</button>
-                <div className="counter-count">{count}</div>
+                {/* <div className="counter-count">{count}</div> */}
+                <Counter number={count} />
                 <button onClick={Add} className='counter--plus'>+</button>
         </div>
         </>

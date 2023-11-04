@@ -9,6 +9,7 @@ export default function Mapping () {
             return [...prevThingsArray, `Thing ${prevThingsArray.length + 1}`]
         })
     }
+    // think can be used for the cart and adding things to cart
 
     // [...spread operator, returns all the items in the array and snce the prevThingsArray points to an array then it returns all the elements of thingsArray, therefore its a new array]
     // AddItem adds a new element to the array with "Thing x[y]"
