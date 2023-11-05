@@ -1,5 +1,7 @@
 import React from 'react'
 import Counter from './Counter-state'
+import Header from './Passing_data/Header'
+import Body from './Passing_data/Body'
 // import './App.css'
 
 function App() {
@@ -43,10 +45,18 @@ function App() {
     // this a best practise to use suffix of "prev"
     // this is an arrow function 
 
+
+    const [user, setUser] = React.useState("Lucky")
+
     return (
         <>
+
+        <Header name={user} />
+        <Body name={user} />
+
+
         <div className="state">
-            <h1 className="state--title">IS this state important to know?</h1>
+            <h4 className="state--title">IS this state important to know?</h4>
             <div onClick={handleClick}>
                 <button>{isImportant}</button>
             </div>

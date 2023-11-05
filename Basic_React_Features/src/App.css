@@ -1,9 +1,9 @@
-#root {
+/* #root {
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
-}
+} */
 
 button {
   display: inline-block;
@@ -12,7 +12,19 @@ button {
   width: 100px;
   padding: 20px;
 }
-/* 
+
+.box {
+  background-color: limegreen;
+  width: 100px;
+  height: 100px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 50px;
+}
+
 
 .logo {
   height: 6em;
