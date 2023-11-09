@@ -6,7 +6,8 @@ import ReactDOM from 'react-dom/client'
 // import Like from './Flipping-object-values'
 // import Meme from './React-state-objects'
 // import Counter from './Counter-state'
-import BoxesGrid from './Passing_data/Boxes_grid'
+// import BoxesGrid from './Passing_data/Boxes_grid'
+import DisplayJoke from './Passing_data/Jokes-displayer'
 import './App.css'
 // import './index.css'
 
@@ -19,6 +20,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     {/* <Like /> */}
     {/* <Meme /> */}
     {/* <Counter /> */}
-    <BoxesGrid />
+    {/* <BoxesGrid /> */}
+    <DisplayJoke />
   </React.StrictMode>,
 )
