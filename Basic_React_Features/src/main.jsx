@@ -8,7 +8,9 @@ import ReactDOM from 'react-dom/client'
 // import Counter from './Counter-state'
 // import BoxesGrid from './Passing_data/Boxes_grid'
 // import DisplayJoke from './Passing_data/Jokes-displayer'
-import Form from './Forms/Form-1'
+// import Form from './Forms/Form-1'
+// import Login from './Forms/Login'
+import Memes from './Api-Prac/Meme_Api'
 import './App.css'
 // import './index.css'
 
@@ -23,6 +25,8 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     {/* <Counter /> */}
     {/* <BoxesGrid /> */}
     {/* <DisplayJoke /> */}
-    <Form />
+    {/* <Form /> */}
+    {/* <Login /> */}
+    <Memes />
   </React.StrictMode>,
 )

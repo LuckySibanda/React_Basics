@@ -5,13 +5,19 @@
   text-align: center;
 } */
 
-button {
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+}
+
+/* button {
   display: inline-block;
   background-color: rgb(5, 40, 110);
   color: white;
   width: 100px;
   padding: 20px;
-}
+} */
 
 .box {
   /* background-color: black; */
@@ -24,6 +30,25 @@ button {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 20px;
+}
+
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.form > input {
+  width: 50%;
+  height: 50px;
+  margin-top: 10px;
+}
+
+img {
+  width: 300px;
 }
 
 
